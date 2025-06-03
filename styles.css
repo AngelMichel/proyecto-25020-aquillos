@@ -102,7 +102,7 @@
 /* Fondo con imagen */
 .banner 
 {
-  background-image: url('../img/medioRiver.png');
+  background-image: url('img/medioRiver.png');
   background-size: cover;
   background-position: center;
   height: 100vh; 
