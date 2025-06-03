@@ -53,7 +53,7 @@
 }
 
 /* Para alinear los productos en una fila */
-.imagenes 
+.img 
 {
   display: flex;
   justify-content: center; 
@@ -102,7 +102,7 @@
 /* Fondo con imagen */
 .banner 
 {
-  background-image: url('../imagenes/medioRiver.png');
+  background-image: url('../img/medioRiver.png');
   background-size: cover;
   background-position: center;
   height: 100vh; 
