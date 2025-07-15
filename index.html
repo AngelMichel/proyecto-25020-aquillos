@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tienda River</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="headerSuperior">
+    <a href="#">
+      <img src="img/logoRiver.png" height="50px" width="198px" alt="Logo River" />
+    </a>
+    <div class="iconos">
+      <a href="carrito.html" class="carrito-contenedor">
+        <img id="icono-carrito" src="img/carro-de-la-compra.png" alt="carrito de compra" />
+        <span id="contador" class="contador-icono">0</span>
+      </a>
+      <a href="#favoritos">
+        <img src="img/corazon.png" alt="favoritos" width="30" height="30" />
+      </a>
+
+      <div id="usuario-info">
+      <a href="login.html" id="link-login">
+        <img src="img/usuario.png" alt="usuario" width="30" height="30" />
+      </a>
+      <span id="nombre-usuario" style="margin-left: 10px;"></span>
+      <button id="cerrar-sesion" style="display: none; margin-left: 10px;">Cerrar sesión</button>
+</div>
+    
+    </div>
+  </div>
+
+  <div>
+    <img src="img/TiendaRiver.jpg" alt="No se carga" width="100%" />
+  </div>
+
+  <span class="headerInferior">
+    <p class="RedPalabra">Novedades</p>
+    <p>Kits de Juego</p>
+    <p>Entrenamiento</p>
+    <p>Indumentaria</p>
+    <p>Productos Oficiales</p>
+    <p class="RedPalabra">¡Oportunidades!</p>
+  
+
+  </span>
+</header>
+
+<main>
+  <section class="ropa" id="favoritos">
+    <h1>¿ESTÁS LISTO PARA EL PRÓXIMO PARTIDO?</h1>
+
+    <div class="img">
+      <div class="producto" data-id="1" data-nombre="Camiseta Titular" data-precio="99999">
+        <img src="img/camisetatitular.png" alt="camiseta titular" />
+        <p>Camiseta Titular</p>
+        <p>$99.999</p>
+        <button class="btn-agregar">Añadir a carrito</button>
+      </div>
+      <div class="producto" data-id="2" data-nombre="Camiseta Rosa" data-precio="89999">
+        <img src="img/camisetarosa.png" alt="camiseta rosa" />
+        <p>Camiseta Rosa</p>
+        <p>$89.999</p>
+        <button class="btn-agregar">Añadir a carrito</button>
+      </div>
+      <div class="producto" data-id="3" data-nombre="Camiseta Rayada" data-precio="79999">
+        <img src="img/camisetaraya.png" alt="camiseta rayada" />
+        <p>Camiseta Rayada</p>
+        <p>$79.999</p>
+        <button class="btn-agregar">Añadir a carrito</button>
+      </div>
+      <div class="producto" data-id="4" data-nombre="Camiseta Bordó" data-precio="79999">
+        <img src="img/camisetabordo.png" alt="camiseta bordo" />
+        <p>Camiseta Bordó</p>
+        <p>$79.999</p>
+        <button class="btn-agregar">Añadir a carrito</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ya no se muestra el carrito flotante -->
+  <div id="carrito-contenedor" style="display: none;"></div>
+
+  <section class="banner">
+    <div class="contenido">
+      <h1 class="tituloCompartido">¡No te pierdas ninguna novedad!</h1>
+      <h2 class="tituloCompartido">Suscribite a nuestro newsletter</h2>
+
+      <form action="https://formspree.io/f/mrblzngz" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" />
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" />
+
+        <label for="mail">Correo electrónico</label>
+        <input type="email" id="mail" name="correo electronico" />
+
+        <label for="comentario">Comentario</label>
+        <textarea id="comentario" name="comentario" rows="4" placeholder="Escribí tu comentario..."></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div id="Pie">
+    <table>
+      <tr>
+        <th>Contacto</th>
+        <th>Asistencia</th>
+        <th>Seguinos</th>
+      </tr>
+      <tr>
+        <td>
+          <a href="https://wa.me/5491123456789" target="_blank">
+            WhatsApp
+          </a>
+        </td>
+        <td>
+          <a href="#">Términos y condiciones</a>
+        </td>
+        <td>
+          <a href="https://www.instagram.com/tiendariveroficial/?hl=es" target="_blank">
+            Instagram
+          </a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</footer>
+
+<script src="carrito.js"></script>
+<script src="sesion.js"></script> <!--Sirve para cerrar sesion-->
+
+
+</body>
+</html>
+
